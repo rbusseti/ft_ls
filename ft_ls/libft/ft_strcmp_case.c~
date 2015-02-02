@@ -1,0 +1,16 @@
+#include "libft.h"
+
+int	ft_strcmp_case(char *s, char *s2)
+{
+    int		i;
+
+    i = 0;
+    while (s[i])
+    {
+	if (ft_toupper(s[i]) == ft_toupper(s2[i]))
+	    i++;
+	else
+	    return (ft_toupper(s[i]) == ft_toupper(s2[i]));
+    }
+    return (ft_toupper(s[i]) == ft_toupper(s2[i]));
+}
